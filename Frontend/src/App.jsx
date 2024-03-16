@@ -9,6 +9,8 @@ import Contact from "./Component/contact";
 import About from "./Component/About";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
 import NavBar from "./Component/navbar";
+import SignIn from "./Component/SignIn"
+import university from "./Component/university"
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path={"/"} element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/SignIn" element={<SignIn />} />
+          <Route path="/university" element={<university />} />
         </Routes>
       </BrowserRouter>
     </div>
